@@ -18,7 +18,7 @@ public class MyFinalBot extends AdvancedRobot {
 	double alpha = 0.5;
 	double gamma = 0.8;
 	int reward;
-	int numdistance = 10;
+	int numdistance = 10; //state variables
 	int nummenergy = 10;
 	int numsinebearing = 8;
 	int numcosbearing = 8;
@@ -26,12 +26,8 @@ public class MyFinalBot extends AdvancedRobot {
 	static int total_actions = 5;
 	int state[][][][] = new int[numdistance][nummenergy][numsinebearing][numcosbearing];
 	static int action[] = new int[total_actions];
-	//int qdist= 0;
 	double distance;
-	//int qmener=0;
 	double energy;
-	//int qsinbearing=0;
-	//int qcosbearing=0;
 	double sinbearing = 0.0;
 	double cosbearing = 0.0;
 	boolean explore;
